@@ -26,9 +26,9 @@ Celem warsztatów jest samodzielne usprawnienie kodu, z poprawnym użyciem kontr
 
 
 ## 22.05.24 - Jak uprzyjemnić sobie pracę z kodem
-Tematem zajęć jest przedstawienie uczestnikom w jaki sposób developerzy kontrolują jakość kodu aplikacji. 
-Uczestnicy zaznajomią się ze standardami czystego kodu w Pythonie, testami jednostkowymi, oraz narzędziami automatyzującymi te procesy. 
-Celem warsztatów jest samodzielne usprawnienie kodu, z wykorzystaniem narzędzi kontrolujących jakość kodu (`black`, `pytest`)
+Tematem zajęć jest przedstawienie uczestnikom narzędzi używanych przez developerzy w celu usprawnienia pracy nad kodem aplikacji. 
+Uczestnicy zaznajomią się ze standardami czystego kodu w Pythonie, testami jednostkowymi, oraz narzędziami automatyzującymi te procesy (`black`, `pytest`). Dowiedzą się również w jaki sposób analizować poprawność przepływu kodu z użyciem punktów kontrolnych i debuggera.
+Celem warsztatów jest samodzielne usprawnienie kodu, z wykorzystaniem narzędzi poznanych podczas warsztatów.
 
 > Agenda:
 > - tbd
