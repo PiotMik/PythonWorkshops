@@ -24,6 +24,18 @@ Celem warsztatów jest samodzielne usprawnienie kodu, z poprawnym użyciem kontr
 > - [Git cheatsheet](https://training.github.com/downloads/pl/github-git-cheat-sheet/)
 > - [Gitflow](https://www.atlassian.com/pl/git/tutorials/comparing-workflows/gitflow-workflow)
 
+
+## 22.05.24 - Jak uprzyjemnić sobie pracę z kodem
+Tematem zajęć jest przedstawienie uczestnikom w jaki sposób developerzy kontrolują jakość kodu aplikacji. 
+Uczestnicy zaznajomią się ze standardami czystego kodu w Pythonie, testami jednostkowymi, oraz narzędziami automatyzującymi te procesy. 
+Celem warsztatów jest samodzielne usprawnienie kodu, z wykorzystaniem narzędzi kontrolujących jakość kodu (`black`, `pytest`)
+
+> Agenda:
+> - tbd
+
+> Materiały pomocnicze:
+> - tbd
+
 ### Authors
 [Piotr Mikler <piotr.mikler1997@gmail.com>](https://github.com/PiotMik)
 
