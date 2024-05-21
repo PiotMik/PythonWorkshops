@@ -26,15 +26,23 @@ Celem warsztatów jest samodzielne usprawnienie kodu, z poprawnym użyciem kontr
 
 
 ## 22.05.24 - Jak uprzyjemnić sobie pracę z kodem
-Tematem zajęć jest przedstawienie uczestnikom narzędzi używanych przez developerzy w celu usprawnienia pracy nad kodem aplikacji. 
+Tematem zajęć jest przedstawienie uczestnikom narzędzi używanych przez developerów w celu usprawnienia pracy nad kodem aplikacji. 
 Uczestnicy zaznajomią się ze standardami czystego kodu w Pythonie, testami jednostkowymi, oraz narzędziami automatyzującymi te procesy (`black`, `pytest`). Dowiedzą się również w jaki sposób analizować poprawność przepływu kodu z użyciem punktów kontrolnych i debuggera.
 Celem warsztatów jest samodzielne usprawnienie kodu, z wykorzystaniem narzędzi poznanych podczas warsztatów.
 
 > Agenda:
-> - tbd
+> - Skrypty w pythonie
+> - Symulacje zmiennych losowych i wizualizacje (`numpy`, `matplotlib`, `seaborn`)
+> - Debugging kodu
+> - Czysta składnia i jej automatyczne kontrolowanie (`PEP8`, `flake8`, `black`)
+> - Testy jednostkowe (`pytest`)
 
 > Materiały pomocnicze:
-> - tbd
+> - Good `numpy` [tutorials](https://www.w3schools.com/python/numpy/default.asp)
+> - `seaborn` [further reading](https://seaborn.pydata.org/tutorial/introduction.html)
+> - [`SciencePlots` theme](https://github.com/garrettj403/SciencePlots) for your thesis, research papers
+> - [`PEP8` reference](https://peps.python.org/pep-0008/)
+> - [`pytest` tutorial](https://blog.qalabs.pl/pytest/pytest-pierwsze-kroki/)
 
 ### Authors
 [Piotr Mikler <piotr.mikler1997@gmail.com>](https://github.com/PiotMik)
