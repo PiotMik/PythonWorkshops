@@ -59,19 +59,6 @@ Troubleshooting of common problems is listed below the instructions.
         - Installing packageN (N.N.N)
         ```
    - After the dependencies are installed, you should see a `.venv` directory created under `PythonWorkshops`. This is a virtual environment, containing all installed libraries. 
-   - Run the project script to ensure everything is set up correctly:
-     ```sh
-     poetry run python pypricer/pypricer_api.py
-     ```
-   - You should see output similar to the following, indicating that the `pypricer_api.py` script is running correctly (details may differ):
-     ```
-     INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
-     INFO:     Started reloader process [28764] using statreload
-     INFO:     Started server process [28766]
-     INFO:     Waiting for application startup.
-     INFO:     Application startup complete.
-     ```
-   - Open your web browser, navigate to the URL given by the code and add `/docs` to it (here: `http://127.0.0.1:8080/docs`). You should see the FastAPI auto-generated documentation for your API.
 
 4. **Validate Dependencies installed by Poetry**
    - This validation step requires that the `poetry install` worked correctly in previous step 
@@ -90,6 +77,20 @@ Troubleshooting of common problems is listed below the instructions.
      black, a.b.c
      pytest x.y.z
      ```
+   - Run the project script to ensure the `pypricer` API is working:
+     ```sh
+     poetry run python pypricer/pypricer_api.py
+     ```
+   - You should see output similar to the following, indicating that the `pypricer_api.py` script is running correctly (details may differ):
+     ```
+     INFO:     Uvicorn running on http://localhost:8080 (Press CTRL+C to quit)
+     INFO:     Started reloader process [28764] using statreload
+     INFO:     Started server process [28766]
+     INFO:     Waiting for application startup.
+     INFO:     Application startup complete.
+     ```
+   - Open your web browser, navigate to the URL given by the code and add `/docs` to it (here: `http://localhost:8080/docs`). You should see the FastAPI auto-generated documentation for your API.
+   ![Expected view: ](fastapi_img.PNG)
 
 #### Troubleshooting Common Issues
 
