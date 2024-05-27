@@ -110,7 +110,7 @@ If you encounter issues where Python or Poetry is not recognized as a command, i
    - **Windows:**
      - Poetry’s installer typically adds Poetry to the PATH, but if it doesn’t, follow the steps for adding Python to PATH and add the path to the Poetry binary (e.g., `C:\Users\YourUsername\AppData\Local\Programs\Python\Python39\Scripts`).
 
-3. **Poetry saying the Python version is incompatible**
+3. **Poetry saying the Python version is incompatible**  
    See requirement for Python >= 3.9, and step 1 for validation. Note that Poetry creates a virtual environment, and by running commands as:
    ```bash
    poetry run <some command>
