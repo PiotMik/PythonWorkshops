@@ -41,7 +41,6 @@ class EuropeanCallOption(EuropeanOption):
 
     def price(self, path: pd.DataFrame, rfr: float) -> np.ndarray:
         """Compute the price of the option using the Black-Scholes formula.
-
         Args:
             path (pd.DataFrame): DataFrame with asset price realizations.
                 Columns represent different trajectories, rows represent time steps.
@@ -51,6 +50,39 @@ class EuropeanCallOption(EuropeanOption):
             np.ndarray: Array containing option prices for each trajectory.
         """
         return np.exp(-self.expiry * rfr) * self.payoff(path=path).mean()
+
+
+class EuropeanPutOption(EuropeanOption):
+
+    def price(self, path: pd.DataFrame, rfr: float) -> np.ndarray:
+        """Compute the price of the option using the Black-Scholes formula.
+        Args:
+            path (pd.DataFrame): DataFrame with asset price realizations.
+                Columns represent different trajectories, rows represent time steps.
+            rfr (float): Risk-free rate.
+
+        Returns:
+            np.ndarray: Array containing option prices for each trajectory.
+        """
+        return np.exp(-self.expiry * rfr) * self.payoff(path=path).mean()
+
+    def payoff(self, path: pd.DataFrame) -> np.ndarray:
+        """Compute option payoff
+
+        Args:
+            path (pd.DataFrame): Dataset with asset price realizations.
+                Columns are trajectories, rows is the time index.
+
+        Returns:
+            pd.DataFrame: Dataset with payoffs for each trajectory
+        """
+        return np.maximum(0.0, self.strike_price - path.iloc[-1, :])
+
+    # class EuropeanPutOption
+
+    # dziedziczy z European Option
+    # # payoff -> np.maximum(0.0, self.strike_price - path.iloc[-1, :])
+    # # price --> taki jak w EuropeanCallOption
 
 
 if __name__ == "__main__":
