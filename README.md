@@ -45,7 +45,7 @@ Celem warsztatów jest samodzielne usprawnienie kodu, z wykorzystaniem narzędzi
 > - [`pytest` tutorial](https://blog.qalabs.pl/pytest/pytest-pierwsze-kroki/)
 
 
-## 05.06.25 - Programowanie obiektowe
+## 05.06.24 - Programowanie obiektowe
 Tematem zajęć jest zapoznanie uczestników z konceptem programowania obiektowego w Pythonie.
 Uczestnicy będą mieli okazję zobaczyć i zaimplementować koncept dziedziczenia, wyposażyć klasę w metody typu *dunder*, oraz poznać przydatne biblioteki usprawniające development OOP. 
 Celem warsztatów jest rozszerzenie biblioteki o dodatkowe funkcjonalności, oraz usprawnienie kodu z wykorzystaniem poznanych technik OOP.
