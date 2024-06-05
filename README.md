@@ -44,6 +44,23 @@ Celem warsztatów jest samodzielne usprawnienie kodu, z wykorzystaniem narzędzi
 > - [`PEP8` reference](https://peps.python.org/pep-0008/)
 > - [`pytest` tutorial](https://blog.qalabs.pl/pytest/pytest-pierwsze-kroki/)
 
+
+## 05.06.25 - Programowanie obiektowe
+Tematem zajęć jest zapoznanie uczestników z konceptem programowania obiektowego w Pythonie.
+Uczestnicy będą mieli okazję zobaczyć i zaimplementować koncept dziedziczenia, wyposażyć klasę w metody typu *dunder*, oraz poznać przydatne biblioteki usprawniające development OOP. 
+Celem warsztatów jest rozszerzenie biblioteki o dodatkowe funkcjonalności, oraz usprawnienie kodu z wykorzystaniem poznanych technik OOP.
+
+> Agenda:
+> - Klasy i ich definicja w pythonie
+> - Zmienne klasowe, atrybuty i metody
+> - Dziedziczenie i polimorfizm
+> - Metody dunder i dekoratory @property, @classmethod
+> - `dataclass`
+
+> Materiały pomocnicze:
+> - `pydantic` [intro](https://docs.pydantic.dev/latest/)
+> - OOP [tutorial](https://realpython.com/python3-object-oriented-programming/)
+
 ### Authors
 [Piotr Mikler <piotr.mikler1997@gmail.com>](https://github.com/PiotMik)
 
