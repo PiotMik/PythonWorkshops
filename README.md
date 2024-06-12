@@ -71,7 +71,7 @@ Celem warsztatów jest prezentacja części developmentu aplikacji dotyczącej d
 > - REST architecture
 
 > Materiały pomocnicze:
-> - REST [overview](https://realpython.com/python3-object-oriented-programming/)
+> - REST [overview](https://www.redhat.com/en/topics/api/what-is-a-rest-api)
 
 
 ### Authors
