@@ -19,9 +19,17 @@ class EuropeanOption:
         """Abstract method"""
         raise NotImplementedError("Payoff needs to be implemented in child classes")
 
-    def price(self, path: pd.DataFrame, rfr: float) -> float:
-        """Abstract method"""
-        raise NotImplementedError("Pricing needs to be implemented in child classes")
+    def price(self, path: pd.DataFrame, rfr: float) -> np.ndarray:
+        """Compute the price of the option using the Black-Scholes formula.
+        Args:
+            path (pd.DataFrame): DataFrame with asset price realizations.
+                Columns represent different trajectories, rows represent time steps.
+            rfr (float): Risk-free rate.
+
+        Returns:
+            np.ndarray: Array containing option prices for each trajectory.
+        """
+        return np.exp(-self.expiry * rfr) * self.payoff(path=path).mean()
 
 
 class EuropeanCallOption(EuropeanOption):
@@ -39,18 +47,26 @@ class EuropeanCallOption(EuropeanOption):
         """
         return np.maximum(0.0, path.iloc[-1, :] - self.strike_price)
 
-    def price(self, path: pd.DataFrame, rfr: float) -> np.ndarray:
-        """Compute the price of the option using the Black-Scholes formula.
+
+class EuropeanPutOption(EuropeanOption):
+
+    def payoff(self, path: pd.DataFrame) -> np.ndarray:
+        """Compute option payoff
 
         Args:
-            path (pd.DataFrame): DataFrame with asset price realizations.
-                Columns represent different trajectories, rows represent time steps.
-            rfr (float): Risk-free rate.
+            path (pd.DataFrame): Dataset with asset price realizations.
+                Columns are trajectories, rows is the time index.
 
         Returns:
-            np.ndarray: Array containing option prices for each trajectory.
+            pd.DataFrame: Dataset with payoffs for each trajectory
         """
-        return np.exp(-self.expiry * rfr) * self.payoff(path=path).mean()
+        return np.maximum(0.0, self.strike_price - path.iloc[-1, :])
+
+    # class EuropeanPutOption
+
+    # dziedziczy z European Option
+    # # payoff -> np.maximum(0.0, self.strike_price - path.iloc[-1, :])
+    # # price --> taki jak w EuropeanCallOption
 
 
 if __name__ == "__main__":
