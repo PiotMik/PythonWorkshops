@@ -61,6 +61,19 @@ Celem warsztatów jest rozszerzenie biblioteki o dodatkowe funkcjonalności, ora
 > - `pydantic` [intro](https://docs.pydantic.dev/latest/)
 > - OOP [tutorial](https://realpython.com/python3-object-oriented-programming/)
 
+## 12.06.24 - Otwarcie aplikacji dla użytkowników
+Tematem zajęć jest zapoznanie uczestników z architekturą REST.
+Uczestnicy będą mieli okazję dowiedzieć się w jaki sposób developerzy eksponują wybrane funkcjonalności biblioteki dla użytkowników, oraz rozszerzyć REST API o funkcjonalności zaimplementowane na poprzednich warsztatach.
+Celem warsztatów jest prezentacja części developmentu aplikacji dotyczącej dostarczenia do użytkowników.
+
+> Agenda:
+> - GitHub Pull Requests
+> - REST architecture
+
+> Materiały pomocnicze:
+> - REST [overview](https://realpython.com/python3-object-oriented-programming/)
+
+
 ### Authors
 [Piotr Mikler <piotr.mikler1997@gmail.com>](https://github.com/PiotMik)
 
